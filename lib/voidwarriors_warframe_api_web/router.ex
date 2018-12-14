@@ -13,6 +13,5 @@ defmodule VoidwarriorsWarframeApiWeb.Router do
     if Mix.env() == :dev do
       forward "graphiql", Absinthe.Plug.Graphiql, schema: VoidwarriorsWarframeApiWeb.Schema
     end
-
   end
 end

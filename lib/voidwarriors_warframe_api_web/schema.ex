@@ -2,7 +2,6 @@ defmodule VoidwarriorsWarframeApiWeb.Schema do
   use Absinthe.Schema
 
   query do
-
   end
 
   # mutation do
@@ -12,5 +11,4 @@ defmodule VoidwarriorsWarframeApiWeb.Schema do
   # subscription do
 
   # end
-
 end
