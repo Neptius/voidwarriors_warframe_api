@@ -47,10 +47,4 @@ config :phoenix, :stacktrace_depth, 20
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
 
-# Configure your database
-config :voidwarriors_warframe_api, VoidwarriorsWarframeApi.Repo,
-  username: "postgres",
-  password: "pass",
-  database: "voidwarriors_warframe_api_dev",
-  hostname: "192.168.99.100",
-  pool_size: 10
+import_config "dev.secret.exs"
