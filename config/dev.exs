@@ -50,7 +50,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :voidwarriors_warframe_api, VoidwarriorsWarframeApi.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "pass",
   database: "voidwarriors_warframe_api_dev",
-  hostname: "localhost",
+  hostname: "192.168.99.100",
   pool_size: 10
