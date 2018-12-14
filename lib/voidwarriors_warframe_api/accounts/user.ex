@@ -27,7 +27,13 @@ defmodule VoidwarriorsWarframeApi.Accounts.User do
     |> hash_password
   end
 
-  defs hash_password(changeset) do
+  @doc false
+  defp hash_password(%Ecto.Changeset{valid?: true, changes: %{password: password}} = changeset) do
+    change(changeset, Comeonin.Argon2.add_hash(password))
+  end
+
+  @doc false
+  defp hash_password(changeset) do
     changeset
   end
 
