@@ -9,7 +9,7 @@ defmodule VoidwarriorsWarframeApiWeb.Schema do
     @desc "Get a list of all users"
     field :users, list_of(:user_type) do
       # Resolver
-      resolve(&Resolver.UserResolver.users/3)
+      resolve(&Resolvers.UserResolver.users/3)
     end
   end
 
